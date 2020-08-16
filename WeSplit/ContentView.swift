@@ -95,7 +95,7 @@ struct ContentView: View {
                 }
                 
                 Section(header: Text("Calculations")) {
-                    ResultView(description: "Tip amount", cash: tipAmout)
+                    ResultView(description: "Tip amount", cash: tipAmout).foregroundColor(iPercentages == 4 ? Color.red : Color.black)
                     ResultView(description: "Total amount", cash: totalAmount)
                     ResultView(description: "Total per guest", cash: totalPerGuest)
                 }
